@@ -1,0 +1,4 @@
+pip install django>=4.0
+pip install mysqlclient # If you're using MySQL
+install python-3.9
+
