@@ -97,7 +97,7 @@ Below are some screenshots demonstrating the functionality of the Rule Engine Ap
    ![Input](Screenshots/Input.png)
 
 2. **Evaluating a Rule**:
-   ![Output](Screenshots/Output.png)
+   ![Output](Screenshots/Ouput.png)
 
 
 ## Conclusion
