@@ -1,0 +1,55 @@
+Test Case 1: Valid Rule and Data
+Input Rule: (age > 30 AND department = 'Sales')
+Input Data: {"age": 35, "department": "Sales", "salary": 60000, "experience": 3}
+Expected Output: True (since both conditions are satisfied)
+
+Test Case 2: Valid Rule with Different Data
+Input Rule: (age < 25 OR department = 'HR')
+Input Data: {"age": 22, "department": "IT", "salary": 45000, "experience": 1}
+Expected Output: True (first condition is satisfied)
+
+
+Test Case 4: Invalid Rule Syntax
+Input Rule: (age > 30 AND department 'Sales')
+Input Data: {"age": 35, "department": "Sales", "salary": 60000, "experience": 3}
+Expected Output: Error (invalid rule syntax)
+
+Test Case 5: Empty Rule and Data
+Input Rule: ""
+Input Data: ""
+Expected Output: Error (both fields are required)
+
+Test Case 6: Valid Rule with Edge Data
+Input Rule: (salary > 50000 AND experience >= 5)
+Input Data: {"age": 30, "department": "Sales", "salary": 50000, "experience": 5}
+Expected Output: False (salary condition is not satisfied)
+
+Test Case 7: Non-numeric Data for Numeric Field
+Input Rule: (age > 30)
+Input Data: {"age": "thirty-five", "department": "Sales", "salary": 60000, "experience": 3}
+Expected Output: Error (invalid data type for age)
+
+Test Case 8: Invalid JSON Format for Data
+Input Rule: (age > 30 AND department = 'Sales')
+Input Data: "{age: 35, department: 'Sales', salary: 60000, experience: 3}"
+Expected Output: Error (invalid JSON format)
+
+Test Case 9: Rule with All Conditions False
+Input Rule: (age < 20 AND salary > 100000)
+Input Data: {"age": 30, "department": "Sales", "salary": 60000, "experience": 3}
+Expected Output: False (both conditions are not satisfied)
+
+Test Case 11: Missing Fields in Data
+Input Rule: (salary > 40000)
+Input Data: {"age": 30, "department": "Sales"}
+Expected Output: Error (missing salary field)
+
+Test Case 12: Valid Rule with Large Numbers
+Input Rule: (salary >= 100000 AND experience >= 5)
+Input Data: {"age": 40, "department": "Management", "salary": 150000, "experience": 10}
+Expected Output: True
+
+Test Case 13: Rule with multiple fields
+Input Rule: (age > 30 AND department = 'Marketing')
+Input JSON Data: {"age": 35,"department": "Marketing"}
+Expected Output: True
