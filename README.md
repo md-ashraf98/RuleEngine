@@ -94,10 +94,10 @@ Follow these steps to set up and run the project locally:
 Below are some screenshots demonstrating the functionality of the Rule Engine Application:
 
 1. **Creating a Rule**:
-   ![Creating a Rule]("C:\Users\moham\rule_engine\Screenshots\Input.png")
+   ![Input](Screenshots/Input.png)
 
 2. **Evaluating a Rule**:
-   ![Evaluating a Rule]("C:\Users\moham\rule_engine\Screenshots\Ouput.png")
+   ![Output](Screenshots/Output.png)
 
 
 ## Conclusion
