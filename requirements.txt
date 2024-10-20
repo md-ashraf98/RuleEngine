@@ -1,0 +1,6 @@
+python==3.9    #Python
+Django==4.1.7   #Django framework
+requests==2.28.1  #requests library
+mysqlclient==2.1.0    #MYSQL database connectivity
+djangorestframework==3.12  # For building APIs
+django-cors-headers==3.10    # For handling CORS issues
